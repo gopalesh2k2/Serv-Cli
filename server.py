@@ -26,7 +26,7 @@ conn.send(s_name.encode())
 
 
 while True:
-    message = input("Me > ")
+    message = input("Me ({}) > ".format(s_name))
     if message == "[e]":
         message = s_name + " left chat room"
         conn.send(message.encode())
